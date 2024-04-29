@@ -42,3 +42,4 @@ La base de données H2 est initialisée par la liste de produits disponible dans
 * Implémentation de Swagger avec test pour valider l'api
 * Implémentation de tests unitaires avec **@WebMvcTest** et tests d'intégration avec **@SpringBootTest**
 * Utilisation de docker pour lancer en parallèle une base de données SQL (mariaDB) ou noSQL(mongoDB)
+* Amélioration de la requête PATCH pour éviter le code qui doit être mis à jour à mesure que les exigences changent (utilisation de la librairie "json-patch" ?)
