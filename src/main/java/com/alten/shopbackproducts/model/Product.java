@@ -2,6 +2,8 @@ package com.alten.shopbackproducts.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -26,10 +28,12 @@ public class Product {
 	
 	private Integer quantity;
 	
+	@Enumerated(EnumType.STRING)
 	@Column(name="inventory_status")
-	private String inventoryStatus;
+	private InventoryStatusType inventoryStatus;
 	
-	private String category;
+	@Enumerated(EnumType.STRING)
+	private CategoryType category;
 	
 	private String image;
 	
